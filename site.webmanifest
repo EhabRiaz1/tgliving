@@ -1,0 +1,20 @@
+{
+ "name": "TG Living",
+ "short_name": "TG Living",
+ "start_url": "./index.html",
+ "display": "standalone",
+ "background_color": "#fbf7f1",
+ "theme_color": "#8a9e9d",
+ "icons": [
+  {
+   "src": "brand/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "brand/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
