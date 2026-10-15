@@ -97,10 +97,10 @@ P = [dict(id=f"{i:02d}", name=n, cat=c, vol=v, desc=d, mat=m, slug=slug(n), cut=
 # ---------------------------------------------------------------- shared parts
 def logo(cls=""):
     return f'''<svg class="{cls}" viewBox="0 0 150 64" role="img" aria-label="TG Living"><g fill="currentColor">
-<text class="lt" x="44" y="50" font-size="50" text-anchor="middle" font-family="Bodoni Moda, Didot, serif">T</text>
-<g class="ln"><rect x="74.5" y="4" width="1" height="22"/><rect x="74.5" y="38" width="1" height="22"/></g>
-<text class="lt" x="75" y="34.5" font-size="7.2" text-anchor="middle" letter-spacing="2.2" font-family="Bodoni Moda, Didot, serif">LIVING</text>
-<text class="lt" x="107" y="50" font-size="50" text-anchor="middle" font-family="Bodoni Moda, Didot, serif">G</text></g></svg>'''
+<text class="lt" x="39" y="50" font-size="50" text-anchor="middle" font-family="Bodoni Moda, Didot, serif">T</text>
+<g class="ln"><rect x="74.5" y="4" width="1" height="24"/><rect x="74.5" y="36" width="1" height="24"/></g>
+<text class="lt" x="75.6" y="33.6" font-size="5" text-anchor="middle" letter-spacing="1.3" font-family="Bodoni Moda, Didot, serif">LIVING</text>
+<text class="lt" x="112" y="50" font-size="50" text-anchor="middle" font-family="Bodoni Moda, Didot, serif">G</text></g></svg>'''
 
 def head(title, desc, base, path="", image="brand/og.jpg"):
     # WhatsApp, iMessage and Facebook only show the preview image from a full https:// address,
@@ -183,7 +183,7 @@ def footer(base, credits=""):
       <div><p class="meta">Volumes</p><ul>{vols}</ul></div>
     </div>
   </div>
-  <p class="mega" aria-hidden="true">TG Living</p>
+  <div class="mega" aria-hidden="true">{logo()}<p>Designed for the art of living</p></div>
   <div class="legal wrap"><span>© 2026 TG Living. Designed for the art of living.</span>{credits}</div>
 </footer>'''
 

@@ -254,7 +254,9 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.015em;line-
 .ftr .cols .meta{color:rgba(251,247,241,.55);margin-bottom:14px}
 .ftr .cols li{margin-bottom:6px}
 .ftr .cols a:hover{color:var(--gold)}
-.ftr .mega{font:400 clamp(4rem,19.5vw,22rem)/.8 var(--display);letter-spacing:-.04em;white-space:nowrap;text-align:center;margin-top:24px;transform:translateY(.1em);color:var(--ivory)}
+.ftr .mega{display:grid;justify-items:center;gap:clamp(18px,2.4vw,36px);padding-block:clamp(56px,7vw,110px) clamp(48px,6vw,90px);color:var(--ivory)}
+.ftr .mega svg{width:min(78vw,880px);height:auto}
+.ftr .mega p{font:400 clamp(.7rem,1.1vw,1rem)/1 var(--body);letter-spacing:.5em;text-transform:uppercase;text-indent:.5em;color:rgba(251,247,241,.7)}
 .ftr .legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:22px calc(22px + env(safe-area-inset-bottom,0px));font-size:var(--fs-small);color:rgba(251,247,241,.55);border-top:1px solid rgba(251,247,241,.16)}
 .ftr .legal a{color:rgba(251,247,241,.8)}
 @media (max-width:900px){.ftr .cta h2,.ftr .cta .acts{grid-column:1/-1}.ftr .cols{grid-template-columns:1fr 1fr}}
